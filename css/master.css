@@ -75,9 +75,11 @@ body{
 .header { background-color: red; display: flex; justify-content: center; align-items: center; }
 .navbar { display: flex; justify-content: center; align-items: center; background: #abcdef; }
 
-.cases{text-align: left;}
+.cases{text-align: center;}
 .list-services {display: flex; align-items: center; justify-content: center;}
 	.list-services figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
+.list-cases {display: flex; align-items: center; justify-content: center;}
+	.list-cases figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
 
 /* 2. GENERIC ITEMS */
 .header{height: 450px; background: url(../images/cabecera.jpg) no-repeat center top;background-size: cover;}
@@ -96,10 +98,10 @@ p {margin-bottom: 40px;}
 
 .services {background: #4F6E8D;color: #fff;}
 
-/*.cases {background: url(../images/productos_servicios.jpg) no-repeat center top; background-size: cover; color: #fff;}*/
+.cases {background: url(../images/productos_servicios.jpg) no-repeat center top; background-size: cover; color: #fff;}
 .cases {background-color: #34495e; no-repeat center top; background-size: cover; color: #fff;}
   .contain {max-width: 1055px; margin: 0 auto;}
-  .cases p {max-width: 450px;padding-left: 10px}
+  /*.cases p {max-width: 450px;padding-left: 10px}*/
 
 .contacto {background-color: #4F6E8D;color:#fff; padding-bottom: 0;}
   .contacto .map img {max-width: 50%; width: 25%;vertical-align: middle;}
@@ -107,9 +109,15 @@ p {margin-bottom: 40px;}
 /* 4. LISTS */
 .list-services figure { position: relative; width: 150px; height: 190px;}
   .list-services figure:after {content: ""; position: absolute; top: 0; left: 0; border-radius: 50%; z-index: 0; background: #fff; width: 150px; height: 150px;}
-    .list-services img {position: relative; z-index: 1;width: 100px;}
+  .list-services img {position: relative; z-index: 1;width: 100px;}
   .list-services li { padding: 0 30px; }
 .list-services figcaption { position: relative; left: 0; right: 0; bottom: -40px;}
+
+.list-cases figure { position: relative; width: 150px; height: 190px;}
+.list-cases figure:after {content: ""; position: absolute; top: 0; left: 0; border-radius: 10%; z-index: 0; background: #fff; width: 150px; height: 150px;}
+.list-cases img {position: relative; z-index: 1;width: 100px;}
+.list-cases li { padding: 0 30px; }
+.list-cases figcaption { position: relative; left: 0; right: 0; bottom: -40px;}
 
 /* 5. FORM */
 form{
